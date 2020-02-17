@@ -83,7 +83,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "deploy": "firebase deploy --only hosting:app-miloo"
   },
   "eslintConfig": {
     "extends": "react-app"
