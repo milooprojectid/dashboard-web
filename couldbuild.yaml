@@ -1,0 +1,11 @@
+steps:
+    - name: node:12.16.0
+      entrypoint: npm
+      args: [ 'install' ]
+
+    - name: node:12.16.0
+      entrypoint: npm
+      args: [ 'run', 'build' ]
+
+    - name: 'asia.gcr.io/miloo-phoenix/firebase'
+      args: [ 'deploy', '--only', 'hosting:miloo-phoenix', '--token', '1//0gFEgm53ZstYYCgYIARAAGBASNwF-L9IrohrFCTPItGKyCHwWE0TzOqD11h64J-fwdfVua61PmeA0wi1nZ4KjXPStuNhoAhrKebw']
