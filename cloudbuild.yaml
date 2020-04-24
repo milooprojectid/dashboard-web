@@ -8,4 +8,4 @@ steps:
       args: [ 'run', 'build' ]
 
     - name: 'asia.gcr.io/miloo-phoenix/firebase'
-      args: [ 'deploy', '--only', 'hosting:app-miloo', '--token', '1//0gFEgm53ZstYYCgYIARAAGBASNwF-L9IrohrFCTPItGKyCHwWE0TzOqD11h64J-fwdfVua61PmeA0wi1nZ4KjXPStuNhoAhrKebw']
+      args: [ 'deploy', '--only', 'hosting:app-miloo', '--token', '${_FIREBASE_TOKEN}']
